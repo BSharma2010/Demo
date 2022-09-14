@@ -5,3 +5,5 @@ adding one more file
 
 1. Open index.html in your browser
 
+i am making changes here to understand the difference of git merge 
+
