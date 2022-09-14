@@ -5,4 +5,7 @@ adding one more file
 
 1. Open index.html in your browser
 
+<<<<<<< HEAD
+i am making changes here to understand the difference of git merge 
 adding line here to see if it will create a conflict
+
