@@ -1,6 +1,6 @@
 name: Slack Test Demo
 on: workflow_dispatch
-name: Slack Notification Demo
+
 jobs:
   slackNotification:
     name: Slack Notification
