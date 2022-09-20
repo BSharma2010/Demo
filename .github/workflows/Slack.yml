@@ -2,6 +2,22 @@ name: Slack Test Demo
 on: workflow_dispatch
 
 jobs:
+  Inactive_Users:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Analyze User Activity
+      id: analyze_user_activity
+      uses: peter-murray/inactive-users-action@v1
+      with:
+        token: ${{ secrets.TOKEN }}
+        organization: Bsharma2010
+        activity_days: 1
+    - name: Save User Activity Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: reports
+        path: |
+          ${{ steps.analyze_user_activity.outputs.report_csv }}
   slackNotification:
     name: Slack Notification
     runs-on: ubuntu-latest
